@@ -13,7 +13,6 @@ const Famrs = () => {
           Pools
         </Link>
       </div>
-
       <TopFilter />
       <div className=" flex flex-wrap ">
         <FarmsCard />

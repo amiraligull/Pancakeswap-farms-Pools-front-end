@@ -16,9 +16,8 @@ const Pools = () => {
           Pools
         </Link>
       </div>
-
       <TopFilter />
-      <div className=" flex flex-wrap ">
+      <div className="md:flex flex-wrap">
         <PoolsCard />
         <PoolsCard />
         <PoolsCard />
