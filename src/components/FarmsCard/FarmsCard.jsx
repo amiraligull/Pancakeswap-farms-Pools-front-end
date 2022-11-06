@@ -35,35 +35,35 @@ const FarmsCard = () => {
             0.00000
           </div>
           <div className=" flex-1 ">
-            <button className="bg-gray-200 shadow-lg p-2 text-gray-500 px-4 rounded-full font-extrabold">
+            <button className="bg-blue  shadow-lg p-2 text-white px-4 rounded-full font-extrabold">
               Harvest
             </button>
           </div>
         </div>
         {/* end harvest value */}
-        <span className="custfont text-[#A39AC4] text-[12px] font-semibold">
+        <span className="custfont text-blue text-[12px] font-semibold">
           YIELD BOOSTER
         </span>
         {/* tooltip value */}
         <div className="tooltipContainer flex flex-col gap-1 justify-start items-start">
           <div className="toolkit flex items-center gap-2">
-            <span className="custfont text-lg font-extrabold text-[#503A7C]">
+            <span className="custfont text-lg font-extrabold text-purple">
               Up to 2x
             </span>
             <div className="tooltip" data-tip="hello">
-              <AiFillQuestionCircle className="text-purple-900" />
+              <AiFillQuestionCircle className="text-purple" />
             </div>
           </div>
 
-          <span className="custfont text-[13px] text-cyan-600">
+          <span className="custfont text-[13px] text-purple">
             Connect wallet to activate yield booster
           </span>
           <p className="custfont font-semibold text-[14px]">
-            <span className="text-purple-900"> CAKE-BNB LP</span> STAKED
+            <span className="text-blue"> CAKE-BNB LP</span> STAKED
           </p>
         </div>
         {/* end tooltip value */}
-        <button className="w-full mb-2 rounded-full p-3 text-center text-white custfont shadow-lg text-[1rem] bg-blue-500">
+        <button className="w-full mb-2 rounded-full p-3 text-center text-white custfont shadow-lg text-[1rem] bg-blue">
           Connect wallet
         </button>
         <br />

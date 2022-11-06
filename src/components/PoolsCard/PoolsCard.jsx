@@ -10,12 +10,12 @@ const PoolsCard = () => {
     <div className=" md:w-1/3 p-2 ">
       <div
         className="main border 
-            border-cyan-700 rounded-[20px] 
+            border-blue rounded-[20px] 
               overflow-hidden shadow-lg  "
       >
         <div
-          className="h-full  px-5 py-2 shadow-lg bg-blue-600 flex flex-row
-           justify-between items-center border"
+          className="h-full  px-5 py-2 shadow-lg bg-blue flex flex-row
+           justify-between items-center "
         >
           <div
             className="title flex flex-col custfont text-2xl 
@@ -47,7 +47,7 @@ const PoolsCard = () => {
           <div className="farmAprContainer  mt-4 flex flex-row justify-between items-center  ">
             <div className="farmApr custfont">APR:</div>
             <div className="farmAprValues flex flex-row justify-center gap-4 items-center">
-              <span className="flex gap-2 items-center text-purple-900">
+              <span className="flex gap-2 items-center text-purple">
                 <s className="border-b-2 border-dotted custfont ">24.58%</s>
 
                 <Calculator />
@@ -56,12 +56,15 @@ const PoolsCard = () => {
           </div>
           <hr />
           <span
-            className="custfont text-[#A39AC4] text-[12px]
+            className="custfont text-blue text-[12px]
            font-semibold"
           >
             YIELD BOOSTER
           </span>
-          <button className="w-full mb-2 rounded-full p-3 text-center text-white custfont shadow-lg text-[1rem] bg-blue-500">
+          <button
+            className="w-full mb-2 rounded-full p-3 text-center text-white 
+          custfont shadow-lg text-[1rem] bg-blue"
+          >
             Connect wallet
           </button>
         </div>

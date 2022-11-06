@@ -6,3 +6,7 @@
 .custfont {
   font-family: "Kanit", sans-serif;
 }
+
+.modal-box {
+  max-height: calc(100vh - -1em) !important;
+}

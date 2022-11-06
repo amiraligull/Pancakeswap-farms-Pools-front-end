@@ -1,12 +1,17 @@
 import React from "react";
 import FarmsCard from "../components/FarmsCard/FarmsCard";
 import TopFilter from "../components/TopFilter";
+import { Link } from "react-router-dom";
 const Famrs = () => {
   return (
     <div>
-      <div className="tabs w-1/5 mx-auto tabs-boxed">
-        <a className="tab w-1/2 tab-active">Farms</a>
-        <a className="tab w-1/2 ">Pools</a>
+      <div className="tabs md:w-1/5 mb-2 mx-auto tabs-boxed">
+        <Link to="/" className="tab w-1/2 bg-blue text-white custfont rounded">
+          Farms
+        </Link>
+        <Link to="/Pools" className="tab w-1/2 ">
+          Pools
+        </Link>
       </div>
 
       <TopFilter />

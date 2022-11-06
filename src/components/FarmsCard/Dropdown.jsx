@@ -7,7 +7,7 @@ const Dropdown = () => {
   return (
     <div className="collapsible">
       <div
-        className="  rounded p-2  text-center text-purple-900 custfont font-semibold "
+        className="  rounded p-2  text-center text-purple custfont font-semibold "
         {...getToggleProps()}
       >
         {isExpanded ? "Hide" : "Details"}
@@ -19,13 +19,13 @@ const Dropdown = () => {
             <div className="lvalue  custfont">$198,946,962</div>
           </div>
           <div className="l-links flex flex-col justify-start">
-            <span className="custfont text-sm flex gap-1 items-center text-blue-500">
+            <span className="custfont text-sm flex gap-1 items-center text-blue">
               Get CAKE-BNB LP <HiOutlineExternalLink />
             </span>
-            <span className="custfont text-sm flex gap-1 items-center text-blue-500">
+            <span className="custfont text-sm flex gap-1 items-center text-blue">
               View Contract <HiOutlineExternalLink />
             </span>
-            <span className="custfont text-sm flex gap-1 items-center text-blue-500">
+            <span className="custfont text-sm flex gap-1 items-center text-blue">
               See Pair Info <HiOutlineExternalLink />
             </span>
           </div>

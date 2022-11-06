@@ -1,13 +1,20 @@
 import React from "react";
 import PoolsCard from "../components/PoolsCard/PoolsCard";
 import TopFilter from "../components/TopFilter";
-
+import { Link } from "react-router-dom";
 const Pools = () => {
   return (
     <div>
-      <div className="tabs w-1/5 mx-auto tabs-boxed">
-        <a className="tab w-1/2 ">Farms</a>
-        <a className="tab w-1/2 tab-active ">Pools</a>
+      <div className="tabs md:w-1/5 mx-auto mb-2 tabs-boxed">
+        <Link to="/" className="tab w-1/2 ">
+          Farms
+        </Link>
+        <Link
+          to="/Pools"
+          className="tab w-1/2 bg-blue text-white custfont rounded"
+        >
+          Pools
+        </Link>
       </div>
 
       <TopFilter />
