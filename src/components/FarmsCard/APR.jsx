@@ -1,7 +1,7 @@
 import React from "react";
-import { AiFillCalculator, AiFillQuestionCircle } from "react-icons/ai";
-import { IoRocket } from "react-icons/io5";
 
+import { IoRocket } from "react-icons/io5";
+import Calculator from "../Calculator";
 const APR = () => {
   return (
     <div>
@@ -14,7 +14,8 @@ const APR = () => {
           </span>
           <span className="flex gap-2 items-center text-purple">
             <s className="border-b-2 border-dotted custfont ">24.58%</s>
-            <AiFillCalculator className="text-purple" />
+            {/* <AiFillCalculator className="text-purple" /> */}
+            <Calculator />
           </span>
         </div>
       </div>
