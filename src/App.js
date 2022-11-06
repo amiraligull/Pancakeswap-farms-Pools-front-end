@@ -1,16 +1,13 @@
 import "./App.css";
-import FarmsCard from "./components/FarmsCard";
-import TopFilter from "./components/TopFilter";
+
+import Famrs from "./screens/Farms";
+import Pools from "./screens/Pools";
 function App() {
   return (
     <div className="App">
       <div className="md:p-24 p-5">
-        <TopFilter />
-        <div className=" flex flex-wrap ">
-          <FarmsCard />
-          <FarmsCard />
-          <FarmsCard />
-        </div>
+        <Famrs />
+        <Pools />
       </div>
     </div>
   );
