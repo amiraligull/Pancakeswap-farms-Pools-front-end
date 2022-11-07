@@ -6,7 +6,10 @@ const StakNav = () => {
   return (
     <div className="navbar md:px-[5rem] ">
       <div className="flex-1">
-        <Link to="#" className=" normal-case ">
+        <Link
+          onClick={() => window.open("https://venify.finance/")}
+          className=" normal-case "
+        >
           <img src={logo} alt="logo" width={200} />
         </Link>
       </div>
