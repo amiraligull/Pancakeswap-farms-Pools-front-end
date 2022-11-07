@@ -1,7 +1,6 @@
 import React from "react";
 import pan from "../../assets/pan.png";
 import bnb from "../../assets/bnb.png";
-import { AiFillCalculator } from "react-icons/ai";
 import Dropdown from "./Dropdown";
 import Calculator from "../Calculator";
 

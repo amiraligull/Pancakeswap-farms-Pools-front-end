@@ -3,11 +3,13 @@ import "./App.css";
 import Famrs from "./screens/Farms";
 import Pools from "./screens/Pools";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import StakNav from "./components/StakNav";
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <div className="md:p-24 p-5">
+        <StakNav />
+        <div className="md:px-24 py-3 p-5">
           <Routes>
             <Route path="/" element={<Famrs />} />
             <Route path="Pools" element={<Pools />} />
