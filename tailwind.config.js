@@ -36,7 +36,7 @@ module.exports = {
       // herotext
       purple: "#130F49",
       orange: "#FF5E00",
-      black: "#0F1C49",
+      // black: "#0F1C49",
       // dark: "#000000",
       // slati: "#242A44",
       slati: "#171717",

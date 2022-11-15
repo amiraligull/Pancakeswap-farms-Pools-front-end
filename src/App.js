@@ -1,4 +1,4 @@
-import "./App.css";
+// import "./App.css";
 
 import Famrs from "./screens/Farms";
 import Pools from "./screens/Pools";
@@ -7,7 +7,7 @@ import StakNav from "./components/StakNav";
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className="App bg-slati h-screen">
         <StakNav />
         <div className="md:px-24 py-3 p-5">
           <Routes>

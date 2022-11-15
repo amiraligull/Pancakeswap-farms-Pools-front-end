@@ -16,21 +16,23 @@ const Dropdown = () => {
         <div className="menual">
           <div
             className="p-1 shadow-lg rounded-full gap-2  flex md:flex-row justify-center items-center
-                  border-2 border-blue w-[6rem]"
+                  border-2 border-[#00ffff] w-[6rem]"
           >
-            <span className="font-thine text-blue custfont">Menual</span>
-            <AiOutlineReload className="text-blue" />
+            <span className="font-thine text-[#00ffff] custfont">Menual</span>
+            <AiOutlineReload className="text-white" />
           </div>
         </div>
-        <div className="togal">{isExpanded ? "Hide" : "Details"}</div>
+        <div className="togal text-white">
+          {isExpanded ? "Hide" : "Details"}
+        </div>
       </div>
       <div {...getCollapseProps()}>
         <div className="">
           <div className="liquadityvalue flex flex-row justify-between items-center">
-            <div className="ltitle  custfont">APR:</div>
+            <div className="ltitle text-white  custfont">APR:</div>
             <div className="farmAprValues flex flex-row justify-center gap-4 items-center">
               {/* <span className="flex gap-2 items-center text-purple-900"> */}
-              <span className="border-b-2 border-dotted custfont text-purple ">
+              <span className="border-b-2 border-dotted custfont text-white ">
                 24.58%
               </span>
               <Calculator />
@@ -38,23 +40,23 @@ const Dropdown = () => {
             </div>
           </div>
           <div className="liquadityvalue flex flex-row justify-between items-center">
-            <div className="ltitle  custfont">Total staked:</div>
-            <div className="lvalue  custfont">5,040,724 ROB</div>
+            <div className="ltitle  custfont text-white">Total staked:</div>
+            <div className="lvalue  custfont text-white">5,040,724 ROB</div>
           </div>
           <div className="l-links flex flex-row justify-between ">
-            <div className="custfont">Ends in:</div>
+            <div className="custfont text-white">Ends in:</div>
             <div>
-              <span className="custfont text-right text-sm flex mt-2 gap-1 justify-end items-center text-blue">
+              <span className="custfont text-right text-sm flex mt-2 gap-1 justify-end items-center text-[#00ffff]">
                 3,202,910 blocks
                 <BiTimer />
               </span>
-              <span className="custfont text-right text-sm flex gap-1 justify-end items-center text-blue">
+              <span className="custfont text-right text-sm flex gap-1 justify-end items-center text-[#00ffff]">
                 Get CAKE-BNB LP <HiOutlineExternalLink />
               </span>
-              <span className="custfont text-right text-sm flex gap-1 justify-end items-center text-blue">
+              <span className="custfont text-right text-sm flex gap-1 justify-end items-center text-[#00ffff]">
                 View Contract <HiOutlineExternalLink />
               </span>
-              <span className="custfont text-sm text-right flex gap-1 justify-end items-center text-blue">
+              <span className="custfont text-sm text-right flex gap-1 justify-end items-center text-[#00ffff]">
                 See Pair Info <HiOutlineExternalLink />
               </span>
             </div>

@@ -8,12 +8,11 @@ const PoolsCard = () => {
   return (
     <div className=" md:w-1/3 p-2 ">
       <div
-        className="main border 
-            border-blue rounded-[20px] 
-              overflow-hidden shadow-lg  "
+        className="main border rounded-[20px] 
+              overflow-hidden shadow-inner shadow-[#00ffff] cardbg  "
       >
         <div
-          className="h-full  px-5 py-2 shadow-lg bg-blue flex flex-row
+          className="h-full  px-5 py-2  bg-black  shadow-inner shadow-[#00ffff] flex flex-row
            justify-between items-center "
         >
           <div
@@ -44,31 +43,26 @@ const PoolsCard = () => {
         {/* apr container */}
         <div className="px-5">
           <div className="farmAprContainer  mt-4 flex flex-row justify-between items-center  ">
-            <div className="farmApr custfont">APR:</div>
+            <div className="farmApr custfont text-white">APR:</div>
             <div className="farmAprValues flex flex-row justify-center gap-4 items-center">
-              <span className="flex gap-2 items-center text-purple">
+              <span className="flex gap-2 items-center text-white">
                 <s className="border-b-2 border-dotted custfont ">24.58%</s>
 
                 <Calculator />
               </span>
             </div>
           </div>
-          <hr />
+          <hr className="text-white" />
           <span
-            className="custfont text-blue text-[12px]
+            className="custfont text-[#00ffff] text-[12px]
            font-semibold"
           >
             YIELD BOOSTER
           </span>
-          <button
-            className="w-full mb-2 rounded-full p-3 text-center text-white 
-          custfont shadow-lg text-[1rem] bg-blue"
-          >
-            Connect wallet
-          </button>
+          <button className="walletbtn">Connect wallet</button>
         </div>
         <br />
-        <hr />
+        <hr className="text-white" />
         <div className="px-5">
           <Dropdown />
         </div>

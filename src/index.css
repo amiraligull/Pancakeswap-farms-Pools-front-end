@@ -2,11 +2,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer base {
+  .custfont {
+    font-family: "Kanit", sans-serif;
+  }
 
-.custfont {
-  font-family: "Kanit", sans-serif;
-}
+  .modal-box {
+    max-height: calc(100vh - -1em) !important;
+  }
 
-.modal-box {
-  max-height: calc(100vh - -1em) !important;
+  .walletbtn {
+    @apply w-full mb-2 rounded-full p-4 text-center
+    text-white custfont shadow-inner shadow-[#00ffff] text-[1.1rem] bg-black;
+  }
+  .harvestbtn {
+    @apply w-full mb-2 rounded-full p-2 text-center
+    text-white custfont shadow-inner shadow-[#00ffff] text-[1.1rem] bg-black;
+  }
+  .cardbg {
+    background-image: url("./assets/herobg2.gif");
+    background-color: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  span {
+    color: white;
+  }
 }

@@ -16,7 +16,7 @@ const Calculator = () => {
         htmlFor="my-modal"
         className="btn p-0 m-0 border-none hover:bg-transparent bg-transparent"
       >
-        <AiFillCalculator className="text-purple" />
+        <AiFillCalculator className="text-white" />
       </label>
 
       {/* Put this part before </body> tag */}
@@ -26,20 +26,20 @@ const Calculator = () => {
           <div className="md:p-4">
             <div
               className="main rounded-[20px] 
-              overflow-hidden shadow-lg bg-white "
+              overflow-hidden  shadow-inner shadow-[#00ffff] cardbg"
             >
               <div
-                className="h-full  px-5 py-2 shadow-lg bg-purple flex flex-row
-           justify-between items-center border"
+                className="h-full  px-5 py-2 shadow-inner shadow-[#00ffff] bg-black flex flex-row
+           justify-between items-center "
               >
-                <div className="title flex flex-col custfont text-xl font-bold text-white ">
+                <div className="title flex flex-col custfont text-lg font-bold text-white ">
                   ROI Calculator
                 </div>
 
                 <div className="farmImgescontainer">
                   <label
                     htmlFor="my-modal"
-                    className="btn bg-blue   border-none hover:bg-transparent"
+                    className="btn bg-slati shadow-inner shadow-[#00ffff]   border-none hover:bg-transparent"
                   >
                     Close
                   </label>
@@ -48,29 +48,29 @@ const Calculator = () => {
 
               <div className="mainvalue  mx-atuo p-4 ">
                 <span className="pl-1 custfont text-sm"> CAKE STAKED</span>
-                <div className="flex flex-col  p-4 rounded border-blue border bg-lightBlue">
+                <div className="flex flex-col  p-4 rounded border-[#00ffff] border bg-black">
                   <div
-                    className="inputValue bg-gray-200  
+                    className="inputValue   
                    flex flex-row justify-end items-center"
                   >
                     <input
                       type="text"
                       placeholder="0.00USD"
-                      className=" text-xl w-full max-w-xs bg-transparent border-none"
+                      className=" text-xl w-full max-w-xs bg-transparent text-white border-none"
                     />
-                    <BsArrowDownUp className="text-blue " />
+                    <BsArrowDownUp className="text-[#00ffff] " />
                   </div>
-                  <span className="pl-4 custfont text-blue text-sm">
+                  <span className="pl-4 custfont text-[#00ffff] text-sm">
                     0.00 CAKE
                   </span>
                 </div>
               </div>
               {/* apr container */}
               <div className="p-2 flex flex-col justify-start items-start">
-                <span className="text-purple custfont text-[12px] pl-2">
+                <span className="text-white custfont text-[12px] pl-2">
                   STAKED FOR
                 </span>
-                <div className="btn-group rounded-full border-2 border-blue p-1   overflow-hidden">
+                <div className="btn-group rounded-full border-2 border-[#00ffff] p-1   overflow-hidden">
                   <Daysbtn day="1D" active="active" />
                   <Daysbtn day="7D" />
                   <Daysbtn day="30D" />
@@ -80,7 +80,7 @@ const Calculator = () => {
               </div>
 
               <div className="p-2 flex flex-col">
-                <span className="text-purple custfont text-[12px] pl-2">
+                <span className="text-white custfont text-[12px] pl-2">
                   COMPOUNDING EVERY
                 </span>
                 <div className="compoundbar flex flex-row justify-start gap-3">
@@ -93,7 +93,7 @@ const Calculator = () => {
                       />
                     </label>
                   </div>
-                  <div className="btn-group rounded-full border-2 border-blue p-1   overflow-hidden">
+                  <div className="btn-group rounded-full border-2 border-[#00ffff] p-1   overflow-hidden">
                     <Daysbtn day="1D" active="active" />
                     <Daysbtn day="7D" />
                     <Daysbtn day="14D" />
@@ -107,23 +107,24 @@ const Calculator = () => {
               </div>
 
               <div
-                className="rates flex border border-blue p-5 w-[80%] bg-lightBlue mx-auto rounded-[20px]
+                className="rates flex border border-[#00ffff] p-5 
+                w-[80%] bg-black mx-auto rounded-[20px]
                flex-row justify-between items-center"
               >
                 <div className="values flex flex-col ">
                   <span className="custfont text-sm">ROI AT CURRENT RATES</span>
-                  <span className="custfont text-lg text-blue font-extrabold">
+                  <span className="custfont text-lg text-[#00ffff] font-extrabold">
                     $0.00
                   </span>
                   <span className="custfont text-[10px]">~ 0 MGP(0.00%)</span>
                 </div>
                 <div className="editicon">
-                  <AiFillEdit className="text-4xl text-blue" />
+                  <AiFillEdit className="text-4xl text-[#00ffff]" />
                 </div>
               </div>
 
               <br />
-              <hr />
+              {/* <hr /> */}
               <div className="">
                 <CalculatorDropdown />
               </div>

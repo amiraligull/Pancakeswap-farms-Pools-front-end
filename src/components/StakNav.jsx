@@ -14,11 +14,11 @@ const StakNav = () => {
         </Link>
       </div>
       <div className="flex-none">
-        <ul className="menu menu-horizontal p-0">
-          <li>
+        <ul className="menu menu-horizontal gap-2 p-0">
+          <li className="bg-black text-white shadow-inner shadow-[#00ffff] rounded-lg">
             <Link to="/">Farms</Link>
           </li>
-          <li>
+          <li className="bg-black text-white shadow-inner shadow-[#00ffff] rounded-lg">
             <Link to="/Pools">Pools</Link>
           </li>
         </ul>

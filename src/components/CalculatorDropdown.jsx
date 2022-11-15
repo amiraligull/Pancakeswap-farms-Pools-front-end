@@ -7,7 +7,9 @@ const CalculatorDropdown = () => {
   return (
     <div className="collapsible">
       <div
-        className="  rounded p-2 h-16 bg-purple text-center text-white custfont font-semibold "
+        className="  rounded p-2 h-16 shadow-inner
+         shadow-[#00ffff] bg-black text-center text-white 
+         custfont font-semibold "
         {...getToggleProps()}
       >
         {isExpanded ? "Hide" : "Details"}
